@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:9-alpine
 
 RUN apk add --no-cache python python-dev python3 python3-dev \
     linux-headers build-base bash git ca-certificates && \
