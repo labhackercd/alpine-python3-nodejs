@@ -8,6 +8,6 @@ RUN apk add --no-cache python python-dev python3 python3-dev \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
     rm -r /root/.cache
 
-RUN apk add tzdata && \
+RUN apk add --no-cache tzdata && \
     cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && \
     echo "America/Sao_Paulo" > /etc/timezone
